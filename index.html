@@ -13,6 +13,7 @@
             background-color: #000;
             color: #fff;
             display: flex;
+            flex-direction: column; /* Use flexbox to stack items */
             justify-content: center;
             align-items: center;
             min-height: 100vh;
@@ -36,8 +37,22 @@
             animation: fadeIn 1.5s ease-out forwards;
             animation-delay: 0.5s;
         }
+        
+        /* Link style */
+        .contact-link {
+            font-size: 1.2em;
+            text-decoration: none;
+            color: #fff;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out forwards;
+            animation-delay: 2s; /* Delay to appear after the heading */
+        }
+        
+        .contact-link:hover {
+            text-decoration: underline;
+        }
 
-        /* Optional: Adding a subtle animation for the background or a glow effect */
+        /* Animations */
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -58,6 +73,12 @@
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1>Website Under Development</h1>
+        <a href="contact.html" class="contact-link">Contact Me</a>
+    </div>
+</body>
+</html>
     <div class="container">
         <h1>Website Under Development</h1>
     </div>
